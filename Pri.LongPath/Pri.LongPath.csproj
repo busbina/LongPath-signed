@@ -35,6 +35,12 @@
     <DocumentationFile>bin\Release\Pri.LongPath.xml</DocumentationFile>
     <NoWarn>CS1591;CS1734;CS1572;CS1573</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>longpath-signed.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,6 +64,9 @@
     <Compile Include="Path.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SafeTokenHandle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="longpath-signed.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

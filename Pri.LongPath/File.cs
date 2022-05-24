@@ -13,7 +13,11 @@ using System.Threading;
 using Microsoft.Win32.SafeHandles;
 using System.Runtime.CompilerServices;
 
-[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Tests")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Tests,PublicKey=0024000004800000940000000602000000240000525341310004000001000100051bfbe5f25c7c"
+																			+"de4747fd0edcc7157ec5153c72e5ad84d993da828f85c9b8bd215a928f3b7f842287a5ae479875"
+																			+"35a756533ce2574d4bc1e8ed055c319915dedf3f0e8b52b03587a8441efd3eb1a818c3fad0bdb2"
+																			+"04e4f102362ec36a2220e5436d06ae597ff34c13435cf8682b22acb4e59bfa444a16133b2eb3b7"
+																			+"b7658be8")]
 namespace Pri.LongPath
 {
 	using PathTooLongException = System.IO.PathTooLongException;
