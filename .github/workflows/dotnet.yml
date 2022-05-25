@@ -18,4 +18,4 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Build app for release
-      run: msbuild Pri.LongPath/Pri.LongPath.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild LongPath.sln -t:rebuild -verbosity:diag -property:Configuration=Release
