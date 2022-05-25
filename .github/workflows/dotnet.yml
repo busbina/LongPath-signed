@@ -21,9 +21,12 @@ jobs:
       run: msbuild LongPath.sln -t:rebuild -verbosity:diag -property:Configuration=Release
     - name: Copy files
       run: |
-        cp Pri.LongPath.net40\bin\Release\*.* nuget\lib\net40
-        cp Pri.LongPath.net20\bin\Release\*.* nuget\lib\net20
-        cp Pri.LongPath\bin\Release\*.* nuget\lib\net45
+        mkdir -p nuget/lib/net40
+        mkdir -p nuget/lib/net45
+        mkdir -p nuget/lib/net20
+        cp Pri.LongPath.net40/bin/Release/* nuget/lib/net40
+        cp Pri.LongPath.net20/bin/Release/* nuget/lib/net20
+        cp Pri.LongPath/bin/Release/* nuget/lib/net45
     - name: list file
-      run: ls nuget\lib\net45
+      run: ls nuget/lib/net45
         
